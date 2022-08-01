@@ -87,8 +87,10 @@ colour is #016ff9
 */
 
 .running-features {
-    margin: 50px 0px 25px;
+    margin: 50px 0px 25px 0px;
     color: #016ff9;
+
+     /* Padding not specified but off center by default if missing */
 }
 
 
@@ -107,6 +109,8 @@ it has a border at the top at 1px with color:  #e1f1ff
     letter-spacing: 1px;
     padding: 15px 0px;
     border-top: 1px solid #e1f1ff;
+    
+    list-style: none; /* Not specified but has decoration by default if missing */
 }
 
 /* the last element of the class = "running-features-item"

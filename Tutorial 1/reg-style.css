@@ -1,0 +1,48 @@
+.title {
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+.form {
+  margin-left: 10px;
+}
+
+label {
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+.selection-input {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightslategrey;
+  margin-top: 5px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+option {
+  margin-left: 10px;
+}
+
+.radio {
+  margin: 10px 5px;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+
+.button {
+  font-size: 18px;
+  color: white;
+  background-color: grey;
+  border: 1px solid lightslategrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.button-red {
+  background-color: lightcoral;
+}

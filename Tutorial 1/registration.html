@@ -1,15 +1,20 @@
 <!DOCTYPE html >
 <html>
+    <head>
+        <link rel="stylesheet" href="./reg-style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
     <body>
-        <form action="">
-            <h1>Marathon Registration</h1>
-            <table>
+        <h1 class="title">Marathon Registration</h1>
+        <form class="form" action="">
+            <table >
                 <tr>
                     <td>
                         <label for="fname">First Name:</label>
                     </td>
                     <td>
-                        <input type="text" required="required" id="fname" name="fname">
+                        <input class="selection-input" type="text" required="required" id="fname" name="fname">
                     </td>
                 </tr>
                 <tr>
@@ -17,7 +22,7 @@
                         <label for="lname">Last Name:</label>
                     </td>
                     <td>
-                        <input type="text" required="required" id="lname" name="fname">
+                        <input class="selection-input" type="text" required="required" id="lname" name="fname">
                     </td>
                 </tr>
                 <tr>
@@ -25,12 +30,12 @@
                         <label for="">Gender:</label>
                     </td>
                     <td>
-                        <input type="radio" id="male" name="gender_radio" value="Male" >
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender_radio" value="Female" >
-                        <label for="female">Female</label>
-                        <input type="radio" id="other" name="gender_radio" value="Other" >
-                        <label for="other">Other</label>
+                        <input class="radio" type="radio" id="male" name="gender_radio" value="Male" >
+                        <label class="radio-label" for="male">Male</label>
+                        <input class="radio" type="radio" id="female" name="gender_radio" value="Female" >
+                        <label class="radio-label" for="female">Female</label>
+                        <input class="radio" type="radio" id="other" name="gender_radio" value="Other" >
+                        <label class="radio-label"for="other">Other</label>
                     </td>
                 </tr>
                 <tr>
@@ -38,7 +43,7 @@
                         <label for="marathon_event">Select an Event:</label>
                     </td>
                     <td>
-                        <select name="event" id="marathon_event" required="required">
+                        <select class="selection-input" name="event" id="marathon_event" required="required">
                             <option value="" disabled selected>Select your race</option>
                             <option value="fun-run">Fun Run 5k</option>
                             <option value="half-marathon">Half Marathon</option>
@@ -51,7 +56,7 @@
                         <label for="email">Email Address</label>
                     </td>
                     <td>
-                        <input type="text" required="required" id="email" name="email">
+                        <input class="selection-input" type="text" required="required" id="email" name="email">
                     </td>
                 </tr>
                 <tr>
@@ -59,7 +64,7 @@
                         <label for="pwd">Password</label>
                     </td>
                     <td>
-                        <input type="password"  required="required" minlength="6" maxlength="12" id="pwd" name="pwd">
+                        <input class="selection-input" type="password"  required="required" minlength="6" maxlength="12" id="pwd" name="pwd">
                     </td>
                 </tr>
                 <tr>
@@ -67,7 +72,7 @@
                         <label for="pwd">Confirm Password</label>
                     </td>
                     <td>
-                        <input type="password" required="required" minlength="6" maxlength="12" id="confirm-pwd" name="confirm-pwd">
+                        <input class="selection-input" type="password" required="required" minlength="6" maxlength="12" id="confirm-pwd" name="confirm-pwd">
                     </td>
                 </tr>
                 <tr>
@@ -75,7 +80,7 @@
                         <label for="age">Age Group</label>
                     </td>
                     <td>
-                        <select name="age" id="age" required="required">
+                        <select class="selection-input" name="age" id="age" required="required">
                             <option value="" disabled selected>Select your age group</option>
                             <option value="u18">Under 18</option>
                             <option value="18-30">18-30</option>
@@ -85,7 +90,8 @@
                     </td>
                 </tr>
             </table>
-            <button type="submit">Register</button>
+            <button class="button button-red" type="submit">Register</button>
+            <button class="button" type="button">Close</button>
         </form>
     </body>
 </html>
