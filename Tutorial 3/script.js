@@ -65,7 +65,7 @@ function calculateAverageA(array) {
 kangaAvg = calculateAverageA(kangaScores);
 gumAvg = calculateAverageA(gumScores);
 
-function determineWinner ( avgTeam1, avgTeam2) {
+function determineWinner (avgTeam1, avgTeam2) {
     return (avgTeam1 > avgTeam2 ? `Kangas Win! (${avgTeam1} vs. ${avgTeam2}) ` : `GumTrees Win!(${avgTeam2} vs. ${avgTeam1}) `)
 }
 const answer4 = document.getElementById("activity2-task4");
