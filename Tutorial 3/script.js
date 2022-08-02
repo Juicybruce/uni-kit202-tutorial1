@@ -1,4 +1,3 @@
-
 console.log('Hello from script.js');
 
 // Activity 2: Write your code for each task below.
@@ -86,23 +85,55 @@ function calcTax ( income ) {
     }
     return income * taxRate;
 }
-console.log(calcTax(40000));
 
 // Task 2
-const answer5 = document.getElementById("activity3-task4");
-content = document.createTextNode(determineWinner(kangaAvg, gumAvg));
+henryIncome = 65000;
+taylorIncome = 85000;
+amandaIncome = 101000;
+
+const answer5 = document.getElementById("activity3-task2a");
+content = document.createTextNode(`Taxable income was $${henryIncome}, tax amount was $${calcTax(henryIncome)}, and the income after tax is $${henryIncome - calcTax(henryIncome)}.`);
 answer5.appendChild(content);
+
+const answer6 = document.getElementById("activity3-task2b");
+content = document.createTextNode(`Taxable income was $${taylorIncome}, tax amount was $${calcTax(taylorIncome)}, and the income after tax is $${taylorIncome - calcTax(taylorIncome)}.`);
+answer6.appendChild(content);
+
+const answer7 = document.getElementById("activity3-task2c");
+content = document.createTextNode(`Taxable income was $${amandaIncome}, tax amount was $${calcTax(amandaIncome)}, and the income after tax is $${amandaIncome - calcTax(amandaIncome)}.`);
+answer7.appendChild(content);
 
 
 // Activity 4: Write your code for each task below.
 // Task 1
-
+taxableIncomes = [ 35000, 45000, 50000, 62000, 70500, 82500, 97000, 101000, 132000, 150000 ]
 
 // Task 2
-
+taxes = [];
+netIncome = [];
 
 // Task 3
+for (var i of taxableIncomes) {
+    taxes.push(calcTax(i));
+    netIncome.push(i - calcTax(i))
+}
+console.log()
 
+const answer8 = document.getElementById("activity4-task3");
+content = document.createTextNode(`${taxes[5]}, ${netIncome[5]}`);
+answer8.appendChild(content);
 
 // Task 4
 
+function calculateAverageB(arr) {
+    var sum = 0;
+    for (var i of arr) {
+        sum += i
+    }
+    
+    return sum / arr.length;
+}
+
+const answer9 = document.getElementById("activity4-task4");
+content = document.createTextNode(calculateAverageB(taxableIncomes));
+answer9.appendChild(content);
