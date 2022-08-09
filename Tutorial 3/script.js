@@ -135,5 +135,5 @@ function calculateAverageB(arr) {
 }
 
 const answer9 = document.getElementById("activity4-task4");
-content = document.createTextNode(calculateAverageB(taxableIncomes));
+content = document.createTextNode(calculateAverageB(netIncome));
 answer9.appendChild(content);

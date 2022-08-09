@@ -4,10 +4,11 @@
         <link rel="stylesheet" href="./reg-style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../Tutorial 4/Activity2/validation.js" defer></script>
     </head>
     <body>
         <h1 class="title">Marathon Registration</h1>
-        <form class="form" action="">
+        <form class="form" name="registrationForm" action="" novalidate>
             <table >
                 <tr>
                     <td>
@@ -22,7 +23,7 @@
                         <label for="lname">Last Name:</label>
                     </td>
                     <td>
-                        <input class="selection-input" type="text" required="required" id="lname" name="fname">
+                        <input class="selection-input" type="text" required="required" id="lname" name="lname">
                     </td>
                 </tr>
                 <tr>
@@ -90,6 +91,7 @@
                     </td>
                 </tr>
             </table>
+            <div class="errors"></div>
             <button class="button button-red" type="submit">Register</button>
             <button class="button" type="button">Close</button>
         </form>
