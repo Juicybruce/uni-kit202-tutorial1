@@ -46,3 +46,12 @@ option {
 .button-red {
   background-color: lightcoral;
 }
+
+
+.errors {
+  padding: 20px;
+  margin: 10px 0;
+  color: red;
+  font-weight: bold;
+  line-height: 1.5;
+}
