@@ -1,7 +1,6 @@
 /* The below variables have been defined for you. Please do not delete them. */
 let secretNumber = Math.trunc(Math.random() * 30) + 1;
 let guesses = 10;
-console.log(secretNumber);
 
 /*
     Declare a function called 'displayMessage'. The function takes a single paramter called 'msg'.
