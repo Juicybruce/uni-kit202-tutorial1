@@ -17,13 +17,23 @@ Race
 | type      | VARCHAR (20) |            | type of race                 | Marathon            |
 | Location  | VARCHAR (20) |            | Whjere the race starts       | Hobart City Hall    |
 | DateTime  | DATETIME     |            | Time race starts             | 2022-07-05 12:00:00 |
+| EmployeeID | INT         | PK, FK     | Employee Identification code | 164332           |
+
 
 Participant 
-
+ 
 | Attribute | Data Type   | Constraint | Description                  | Example        |
 | --------- | ----------- | ---------- | ---------------------------- | -------------- |
 | UniqueID  | INT         | PK         | Participant's      ID        | 500203         |
 | partName  | VARCHAR(20) |            | Participant's        Name    | Alexander Drew |
 | partDOB   | DATE        |            | Participant's Date of birth  | 1992-07-20     |
 | gender    | CHAR(1)     |            | Participant's         Gender | M              |
+
+Registration 
+ 
+| Attribute | Data Type   | Constraint     | Description                  | Example        |
+| --------- | ----------- | ----------     | ---------------------------- | -------------- |
+| UniqueID  | INT         | PK, FK         | Participant's      ID        | 500203         |
+| RaceID    | INT         | PK, FK         | Identififacion code for Race | 103020              |
+
 

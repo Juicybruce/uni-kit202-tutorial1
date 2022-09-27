@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tutorial 9</title>
+</head>
+<body>
+  <h1>Add Participant</h1>
+  <form method="POST" action='./add.php'>
+    <table style='border: 1px solid #000;'>
+      <tr>
+        <td class="label">First name</td>
+        <td><input type="text" name="fname" id="fname" required="required"></td>
+      </tr>
+      <tr>
+        <td class="label">Last name</td>
+        <td><input type="text" name="lname" id="lname" required="required"></td>
+      </tr>
+      <tr>
+        <td class="label">Gender</td>
+        <td>
+          <div><input type="radio" name="gender" value="F" required="required"> Female</div>
+          <div><input type="radio" name="gender" value="M" required="required"> Male</div>
+          <div><input type="radio" name="gender" value="O" required="required"> Other</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Date of birth</td>
+        <td>
+          <input type="date" name="dob" id="dob" required="required">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!--
+            window.location.href is used to get/set the location of the 'current' page.
+            Here, we are using it to redirect the user back to the participants.php page.
+          -->
+          <button type="button" onclick="window.location.href='participants.php'">Cancel</button>
+        </td>
+        <td style="text-align: right;">
+          <button type="submit">Add</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
