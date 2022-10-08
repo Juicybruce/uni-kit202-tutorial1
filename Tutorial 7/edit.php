@@ -80,9 +80,9 @@
       <tr>
         <td class="label">Gender</td>
         <td>
-          <div><input type="radio" name="gender" value="F" <?php echo ($row['gender'] == 'F' )? 'checked="checked"' : ''; }; ?> required> Female</div>
-          <div><input type="radio" name="gender" value="M" <?php if ( $row['gender'] == 'M' ) { echo 'checked="checked"'; };  ?> required> Male</div>
-          <div><input type="radio" name="gender" value="O" <?php if ( $row['gender'] == 'O' ) { echo 'checked="checked"'; }; ?> required> Other</div>
+          <div><input type="radio" name="gender" value="M" <?php if ( $row['gender'] == 'F' ) { echo 'checked="checked"'; }  ?> required> Female</div>
+          <div><input type="radio" name="gender" value="M" <?php if ( $row['gender'] == 'M' ) { echo 'checked="checked"'; }  ?> required> Male</div>
+          <div><input type="radio" name="gender" value="O" <?php if ( $row['gender'] == 'O' ) { echo 'checked="checked"'; } ?> required> Other</div>
         </td>
       </tr>
       <tr> 
