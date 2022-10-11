@@ -35,15 +35,43 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
           font-size: 13px;
       }
 
+      .wrapper {
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid black;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      .button {
+        max-width: 30%;
+      }
+
   </style>
 </head>
 <body>
-
-<form class="login-form" method="POST" name="register-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-  <input type="text" id="username" name="username" placeholder="Account Name">
-  <input type="password" id="pass" name="password" placeholder="Password">
-  <input class="button" type="submit" value="Add to DB"></input>
-</form>
+<div class="wrapper">
+  <form class="login-form" method="POST" name="register-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <div class="input-wrapper">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Account Name">
+    </div>
+    <div class="input-wrapper">
+      <label for="password">Password</label>
+      <input type="password" id="pass" name="password" placeholder="Password">
+    </div>
+    <input class="button" type="submit" value="Add to DB"></input>
+  </form>
+</div>
 
 </body>
 </html>

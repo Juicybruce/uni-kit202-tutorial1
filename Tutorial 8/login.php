@@ -73,7 +73,12 @@ function check_username($user) : bool
     }
 
     form {
-      display: block;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      padding-top: 10px;
     }
 
     #hint {
@@ -81,7 +86,9 @@ function check_username($user) : bool
     }
 
     .button {
+      max-width: 30%;
       text-transform: uppercase;
+      margin-top: 10px;
       padding: 10px;
       border: none;
       background-color: #117cc7;
@@ -90,13 +97,13 @@ function check_username($user) : bool
 </head>
 <body>
   <div id="wrapper">
-
     <form class="login-form" name="login-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-      <input type="text" id="username" name="username" placeholder="Email or Account Name">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Account Name">
+      <label for="password">Password:</label>
       <input type="password" id="pass" name="password" required placeholder="Password">
       <input class="button" name="btnSubmit" type="submit" value="Sign In"></input>
     </form>
-
     <?php if ( $invalid_login === true ): // Add PHP code here to display an error message if the login attempt is invalid. ?>
       <div class="error-text"> Invalid Username or Password.<br>Please try again</div>
     <?php endif; ?>
